@@ -1,0 +1,11 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+Restricted
+{% endblock %}
+
+{% block body_block %}
+    <h1> This is a Restricted Area! </h1>
+    <h3>Hey {{user.username}} you can see this page so you're the real MVP!</h3>
+{% endblock %}
