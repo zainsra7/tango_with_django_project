@@ -1,17 +1,13 @@
-<!DOCTYPE html>
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About</title>
-</head>
-<body>
-    <div>
+
+{% block title_block%}
+ About
+{% endblock %}
+
+{% block body_block%}
         <h1>Rango says here is the about page</h1>
         <img src="{% static "images/logo.png" %}" alt="My website logo"/>
         <p>This tutorial has been put together by <strong>{{name}}</strong></p>
         <img src="{{MEDIA_URL}}cat.jpg" alt="Cat pic" />
-        <a href="/rango/">Index</a>
-    </div>
-</body>
-</html>
+{% endblock %}

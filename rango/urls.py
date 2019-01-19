@@ -2,6 +2,8 @@ from django.conf.urls import url
 
 from rango import views
 
+# app_name = 'rango'  # Adding namespace if there are multiple apps
+
 urlpatterns =[
     url(r'^$', views.index, name='index'),
 
