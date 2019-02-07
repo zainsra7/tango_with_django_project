@@ -5,6 +5,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE',
                       'tango_with_django_project.settings')
 
 django.setup()
+
 from rango.models import Category, Page
 
 
@@ -42,7 +43,7 @@ def populate():
          "url": "http://bottlepy.org/docs/dev/",
          "views": 4},
         {"title": "Flask",
-         "url":"http//flask.pocoo.org",
+         "url": "http://flask.pocoo.org",
          "views": 11}]
 
     cats = {"Python": {"pages": python_pages, "views": 128, "likes": 64},
